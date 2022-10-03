@@ -13,7 +13,18 @@
 		672B2DCE28E78F0F00FCC4A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672B2DCD28E78F0F00FCC4A5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		670F7A6628EB7E29008F9F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 670F7A6228EB7E29008F9F55 /* github test.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 670F7A5128EB7E28008F9F55;
+			remoteInfo = "github test";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		670F7A6228EB7E29008F9F55 /* github test.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "github test.xcodeproj"; path = "../github test/github test.xcodeproj"; sourceTree = "<group>"; };
 		672B2DC328E78F0E00FCC4A5 /* Sleepy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672B2DC628E78F0E00FCC4A5 /* SleepyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepyApp.swift; sourceTree = "<group>"; };
 		672B2DC828E78F0E00FCC4A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		670F7A6328EB7E29008F9F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				670F7A6728EB7E29008F9F55 /* github test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		672B2DBA28E78F0E00FCC4A5 = {
 			isa = PBXGroup;
 			children = (
+				670F7A6228EB7E29008F9F55 /* github test.xcodeproj */,
 				672B2DC528E78F0E00FCC4A5 /* Sleepy */,
 				672B2DC428E78F0E00FCC4A5 /* Products */,
 			);
@@ -113,12 +133,28 @@
 			mainGroup = 672B2DBA28E78F0E00FCC4A5;
 			productRefGroup = 672B2DC428E78F0E00FCC4A5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 670F7A6328EB7E29008F9F55 /* Products */;
+					ProjectRef = 670F7A6228EB7E29008F9F55 /* github test.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				672B2DC228E78F0E00FCC4A5 /* Sleepy */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		670F7A6728EB7E29008F9F55 /* github test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "github test.app";
+			remoteRef = 670F7A6628EB7E29008F9F55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		672B2DC128E78F0E00FCC4A5 /* Resources */ = {
