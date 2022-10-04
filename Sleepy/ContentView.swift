@@ -7,13 +7,30 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
     var body: some View {
         VStack {
+            
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, hello! Welcome all! Wow is this working?!")
+            
+            VStack(alignment: .leading) {
+                Text("Moon Rock")
+                    .font(.title)
+                .foregroundColor(Color(hue: 0.746, saturation: 0.248, brightness: 0.931))
+                HStack {
+                    Text("NASA Space Station")
+                        .font(.subheadline)
+                    Spacer();
+                    Text("Dream Factory")
+                        .font(.subheadline)
+                }
+            }
+                    
         }
         .padding()
     }
@@ -21,6 +38,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        
         ContentView()
     }
 }
