@@ -13,10 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            MapView()
+                .frame(height:300)
+                .ignoresSafeArea(edges:.top)
             
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            CircleImage()
+                .offset(y:-130)
+                .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
                 Text("Moon Rock")
@@ -24,15 +27,24 @@ struct ContentView: View {
                 .foregroundColor(Color(hue: 0.746, saturation: 0.248, brightness: 0.931))
                 HStack {
                     Text("NASA Space Station")
-                        .font(.subheadline)
                     Spacer();
                     Text("Dream Factory")
-                        .font(.subheadline)
                 }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                
+                Divider()
+                Text("About Moon Rock")
+                    .font(.title2)
+                Text("A gorgeous park filled with moon drops and star glitter.")
             }
+            Spacer()
+            .padding()
                     
         }
-        .padding()
+    
+        
+        
     }
 }
 
